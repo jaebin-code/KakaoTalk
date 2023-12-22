@@ -1,12 +1,6 @@
 # 채팅 앱(ChatApp)
 
-<div style="display: flex;">
-  <img src="assets/login.jpg" alt="로그인" width="300" height="600">
-  <img src="assets/chat.jpg" alt="채팅" width="300" height="600">
-  <img src="assets/profile.jpg" alt="프로필" width="300" height="600">
-</div>
-
-
+<img src="assets/chat.jpg" alt="채팅" width="300" height="auto">
 
 ## 프로젝트 소개:
 
@@ -32,3 +26,9 @@ SQLite: 경량 데이터베이스로 간단하게 데이터를 관리하며 신�
 uvicorn main:app --reload
 브라우저에서 http://127.0.0.1:8000으로 접속하여 서비스를 이용하세요.
 
+### 사진
+
+<div style="display: flex;">
+  <img src="assets/login.jpg" alt="로그인" width="300" height="auto">
+  <img src="assets/profile.jpg" alt="프로필" width="300" height="auto">
+</div>
