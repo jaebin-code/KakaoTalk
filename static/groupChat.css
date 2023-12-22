@@ -1,0 +1,65 @@
+body {
+    font-family: 'Malgun Gothic';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 600px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #F7E600;
+    overflow: auto;
+    position: relative;
+}
+
+.container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: #7a7a7a;
+    border-radius: 5px;
+}
+
+
+.chatButton {
+    padding: 10px 20px;
+    margin: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: #ffffff;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+
+
+.friendButton {
+    width: 90%;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+    /* Add transition for smooth color change */
+}
+
+.friendButton.selected {
+    background-color: #ffcc00;
+    color: black;
+}

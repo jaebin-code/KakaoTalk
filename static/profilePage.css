@@ -1,0 +1,147 @@
+body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    flex-direction: column;
+}
+
+.profile-container {
+    width: 400px;
+    height: 600px;
+    display: flex;
+    border: 1px solid black;
+    border-radius: 5px;
+    flex-direction: column;
+    position: relative;
+    justify-content: flex-end;
+    background-color: #556677;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.settings-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#setting-image {
+    width: 15px;
+    height: auto;
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 40px;
+    margin: 20px auto;
+    overflow: hidden;
+    /* 이미지가 넘치는 부분을 숨김 */
+}
+
+.profile-picture img {
+    width: 100px;
+    /* 이미지의 너비를 부모 요소인 profile-picture의 너비에 맞게 설정 */
+    height: auto;
+    /* 비율에 맞게 높이를 자동으로 조정 */
+}
+
+.user-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.user-info h2,
+.user-info p {
+    margin: 0;
+}
+
+.chat-button {
+    width: 40%;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+.popup h3 {
+    margin-top: 0;
+}
+
+.popup label {
+    display: block;
+    margin-top: 10px;
+}
+
+.popup input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.popup button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    /* 버튼 사이에 간격 추가 */
+}
+
+.popup button:hover {
+    background-color: #45a049;
+}
+
+.close-button {
+    cursor: pointer;
+}
+
+#update-image-button {
+    background-color: #2196F3;
+    /* 프로필 이미지 업데이트 버튼의 색상 지정 */
+}
+
+#update-image-button:hover {
+    background-color: #0b7dda;
+    /* 프로필 이미지 업데이트 버튼의 hover 색상 지정 */
+}
+
+#update-status-button {
+    background-color: #FF9800;
+    /* 상태 메시지 업데이트 버튼의 색상 지정 */
+}
+
+#update-status-button:hover {
+    background-color: #e68a00;
+    /* 상태 메시지 업데이트 버튼의 hover 색상 지정 */
+}

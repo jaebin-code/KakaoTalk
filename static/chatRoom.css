@@ -1,0 +1,233 @@
+body {
+    font-family: 'Malgun Gothic';
+    /* 폰트 설정 */
+    display: flex;
+    flex-direction: column;
+    /* 가로로 */
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    /* 세로로 */
+    align-items: center;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#chatboxLeft {
+
+    display: flex;
+    width: 400px;
+    height: 500px;
+    flex-direction: column;
+    /* 세로로 */
+    align-items: flex-start;
+    border-radius: 5px 5px 0 0;
+    /* 패딩 설정 상하 15px, 좌우 10px*/
+    padding: 10px 5px;
+    /* chatbox 색상 설정 */
+    background-color: #9bbbd4;
+    overflow: auto;
+    word-wrap: break-word;
+}
+
+#chatboxLeft::-webkit-scrollbar {
+    width: 8px;
+}
+
+#chatboxLeft::-webkit-scrollbar-thumb {
+    background-color: #7a7a7a;
+    border-radius: 5px;
+}
+
+
+
+
+#leftMessageInput {
+    width: 400px;
+    height: 100px;
+    padding: 5px;
+    resize: none;
+    outline: none;
+    border: none;
+    border-radius: 5px 5px;
+}
+
+
+.buttonContainer {
+    position: relative;
+    width: 400px;
+    height: 25px;
+}
+
+#leftSendButton {
+    position: absolute;
+    right: 0px;
+    bottom: 8px;
+    width: 50px;
+    height: 25px;
+    background-color: #fef01b;
+    border: none;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.message.left {
+    position: relative;
+    /* 매우 중요, 시간을 message 기준으로 위치 설정 위함 */
+    margin: 10px;
+    font-size: 17px;
+    border-radius: 3px;
+    /* 모서리 둥글게 */
+    padding: 5px 8px;
+    max-width: 70%;
+    /* 메세지 박스 최대 길이 설정, % 사용해서 부모 기준 */
+    background-color: white;
+    /* 대화창 색상 설정 */
+    margin-top: 23px;
+}
+
+.message.right {
+    position: relative;
+    margin: 10px;
+    font-size: 17px;
+    margin-bottom: 8px;
+    border-radius: 3px;
+    padding: 5px 8px;
+    max-width: 70%;
+    background-color: #fef01b;
+    align-self: flex-end;
+    /* 오른쪽에 배치되게 */
+}
+
+.time.right {
+    position: absolute;
+    /* 부모 기준으로 위치 설정하기 relative와 관련*/
+    bottom: 3px;
+    /* 부모(이번 과제에서는 message) 기준으로 어디에 위치할 것인가 */
+    left: -65px;
+    color: black;
+    font-size: 13px;
+}
+
+.time.left {
+    position: absolute;
+    bottom: 3px;
+    right: -65px;
+    color: black;
+    font-size: 13px;
+}
+
+.nickname {
+    width: 200px;
+    overflow: hidden;
+        white-space: nowrap;
+        /* 텍스트가 한 줄로 유지되도록 설정 */
+        text-overflow: ellipsis;
+        /* 오버플로우가 발생하면 '...'으로 대체 */
+    position: absolute;
+    top: -23px;
+    left: 5px;
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.picture.right {
+    position: relative;
+    align-self: flex-end;
+}
+
+.IDcontainer {
+    display: flex;
+    width: 400px;
+    flex-direction: row;
+    align-items: center;
+    /* 세로 중앙 정렬을 위한 추가 속성 */
+    margin: 10px;
+}
+
+#userID {
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    margin-right: 10px;
+    resize: none;
+    outline: none;
+    border: 1px solid;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#EnterButton {
+    width: 100px;
+    height: 40px;
+    background-color: #fef01b;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.message.left img {
+    width: 200px;
+    height: auto;
+    /* Set maximum width to 100% of the container */
+    border-radius: 3px;
+    /* Optional: Add border-radius for rounded corners */
+    vertical-align: top;
+}
+
+.message.left.has-image {
+    padding: 0;
+    /* Remove top margin for messages without images */
+}
+
+.message.right img {
+    width: 200px;
+    height: auto;
+    /* Set maximum width to 100% of the container */
+    border-radius: 3px;
+    /* Optional: Add border-radius for rounded corners */
+    vertical-align: top;
+}
+
+.message.right.has-image {
+    padding: 0;
+    /* Remove top margin for messages without images */
+}
+
+        #photoSendButton {
+            position: absolute;
+            left: 0px;
+            bottom: 8px;
+            width: 25px;
+            height: 25px;
+            background-color: #fef01b;
+            border: none;
+            border-radius: 12px;
+            font-size: 13px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+.chatButton {
+    padding: 10px 20px;
+    margin: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: #ffffff;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}

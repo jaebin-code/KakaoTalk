@@ -1,0 +1,60 @@
+        body {
+            font-family: 'Malgun Gothic';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            height: 600px;
+            align-items: center;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #F7E600;
+            justify-content: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333333;
+            margin-bottom: 60px;
+        }
+
+        .login {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            align-items: center;
+        }
+
+        .login input {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        #btn_submit,
+        #registerButton {
+            width: 90%;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        #btn_submit {
+            background-color: #7a7a7a;
+            color: white;
+        }
+
+        #registerButton {
+            background-color: #7a7a7a;
+            color: white;
+        }

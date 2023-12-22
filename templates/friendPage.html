@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loginPage</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/friendPage.css') }}">
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;,">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="myprofile">
+            My Profile
+            <!--<input type="button" id="friendButton"></input><br />-->
+        </div>
+        <div class="friend">
+            Friends List
+
+        </div>
+        <button class="add-friend-button">Add Friend</button>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <p>User ID: <input type="text" name="username" id="username" placeholder="ID" /></p>
+                <button id="add">Add</button>
+                <button id="closeModal">Close</button>
+            </div>
+        </div>
+    </div>
+    <button class="chatButton">Chat List</button>
+    <script src="{{ url_for('static', path='/friendPage.js') }}"></script>
+</body>
+
+</html>

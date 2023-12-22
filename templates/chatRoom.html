@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KakaoTalk</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/chatRoom.css') }}">
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;,">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- <div class="message right">
+        <span class="text">이번 과제는 카카오톡스러운 웹페이지를 만들어봐요</span>
+        <span class="time right">오후 1:09</span>
+    </div>
+    <div class="message left">
+        <span class="text">왜 쓸데없이?</span>
+        <span class="time left">오후 1:09</span>
+        <span class="nickname">leejaebin</span>
+    </div>
+    !-->
+    <div class="container">
+        <div id="chatboxLeft">
+        </div>
+        <textarea id="leftMessageInput"></textarea>
+        <div class="buttonContainer">
+            <button id="leftSendButton">Send</button>
+            <input type="file" id="photoInput" style="display: none;" accept="image/*">
+            <button id="photoSendButton">+</button>
+        </div>
+    </div>
+    <script>
+        var roomnumber = parseInt("{{room_number}}", 10);
+        var globalID = "{{current_user}}";
+    </script>
+    <button class="chatButton">Chat List</button>
+    <script src="{{ url_for('static', path='/chatRoom.js') }}"></script>
+</body>
+
+</html>

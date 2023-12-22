@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loginPage</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/chatListPage.css') }}">
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;,">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="friend">
+            Chat List<br>
+            <!-- <button class="friendButton">
+                <div class=name>Lee Jae Bin</div>
+                <div class="lasttalk">sjfklsdjfksjaklfjklsdjfkldjsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafl</div>
+            </button><br /> -->
+
+        </div>
+        
+    </div>
+    <div class="buttonContainer">
+        <button class="friendsButton">Friend List</button>
+        <button class="chatMakeButton">Make Chatting</button>
+    </div>
+    <script src="{{ url_for('static', path='/chatListPage.js') }}"></script>
+</body>
+
+</html>

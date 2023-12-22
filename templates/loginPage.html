@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loginPage</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/loginPage.css') }}">
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;,">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">SKKU talk</div>
+        <div class="login">
+            <input type="text" name="username" id="username" placeholder="ID"/><br/>
+            <input type="text" name="password" id="password" placeholder="PASSWORD"/><br/>
+            <input type="button" id="btn_submit" value="Login"></input><br />
+            <button id="registerButton" onclick= "window.location.href = '/register_page'">Register</button>
+
+        </div>
+    </div>
+    <script src="{{ url_for('static', path='/loginPage.js') }}"></script>
+</body>
+</html>

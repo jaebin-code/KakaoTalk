@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loginPage</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/profilePage.css') }}">
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;,">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="profile-container">
+        <span class="close-button">X</span>
+        {% if user_id == myid %}
+            <span class="settings-button"><img src="{{ url_for('static', path='/images/settingprofile.jpg') }}" alt="setting image"
+                    id="setting-image"></span>
+        {% endif %}
+        
+            <div class="profile-picture" id="profile-picture">
+                <img src="{{ url_for('static', path=profile_image_path) }}" alt="Profile Image" id="profile-image">
+            </div>
+
+
+        <div class="user-info">
+            <h2 id="namename">{{ name }}</h2>
+            <p id ="statusstatus">{{ status_msg }}</p>
+        </div>
+
+        <button class="chat-button">Chatting</button>
+
+    </div>
+
+<div id="settings-popup" class="popup">
+    <h3>프로필 설정</h3>
+    <label for="status-input">상태 메시지:</label>
+    <input type="text" id="status-input" maxlength="15" placeholder="새로운 상태 메시지 입력">
+
+    <label for="image-input">프로필 이미지:</label>
+    <input type="file" id="image-input" accept="image/*">
+
+    <button id="update-status-button">상태 메시지 업데이트</button>
+    <button id="update-image-button">프로필 이미지 업데이트</button>
+</div>
+    <script>
+        var myid = "{{ user_id }}";
+    </script>
+    <script src="{{ url_for('static', path='/profilePage.js') }}">
+    </script>
+    
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+        body {
+            font-family: 'Malgun Gothic';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+            flex-direction: column;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            height: 600px;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #F7E600;
+            overflow: auto;
+            position: relative;
+        }
+        .container::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .container::-webkit-scrollbar-thumb {
+            background-color: #7a7a7a;
+            border-radius: 5px;
+        }
+
+        .friendButton {
+            width: 90%;
+            padding: 10px;
+            margin: 5px;
+            cursor: pointer;
+            background-color: #7a7a7a;
+            color: white;
+        }
+
+        .add-friend-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 5px;
+            background-color: #3498db;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 5px;
+        }
+
+        .add-friend-button:hover {
+            background-color: #2980b9;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+        }
+
+        .modal-content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            width: 300px;
+            text-align: center;
+        }
+
+.chatButton {
+    padding: 10px 20px;
+    margin: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border: 2px solid #3498db;
+    /* 테두리 색상 */
+    border-radius: 5px;
+    /* 테두리의 꼭짓점을 둥글게 만듦 */
+    background-color: #3498db;
+    /* 배경 색상 */
+    color: #ffffff;
+    /* 텍스트 색상 */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    /* 전환 효과 추가 */
+}
+
+.friendsButton {
+    padding: 10px 20px;
+    margin: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border: 2px solid #3498db;
+    /* 테두리 색상 */
+    border-radius: 5px;
+    /* 테두리의 꼭짓점을 둥글게 만듦 */
+    background-color: #3498db;
+    /* 배경 색상 */
+    color: #ffffff;
+    /* 텍스트 색상 */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    /* 전환 효과 추가 */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    /* 중앙 정렬을 위해 추가 */
+}
+
+.add-friend-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.add-friend-button:hover {
+    background-color: #2980b9;
+}
