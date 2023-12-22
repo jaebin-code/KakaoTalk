@@ -28,5 +28,7 @@ uvicorn main:app --reload
 
 ### 사진
 
-<img src="assets/login.jpg" alt="로그인" width="300" height="auto">
-<img src="assets/profile.jpg" alt="프로필" width="300" height="auto">
+<div style="display: flex;">
+  <img src="assets/login.jpg" alt="로그인" width="300" height="auto">
+  <img src="assets/profile.jpg" alt="프로필" width="300" height="auto">
+</div>
