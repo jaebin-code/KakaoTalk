@@ -1,9 +1,9 @@
 # 채팅 앱(ChatApp)
 
 <div style="display: flex;">
-  <img src="assets/login.jpg" alt="로그인" width="300" height="auto">
-  <img src="assets/chat.jpg" alt="채팅" width="300" height="auto">
-  <img src="assets/profile.jpg" alt="프로필" width="300" height="auto">
+  <img src="assets/login.jpg" alt="로그인" width="300" height="600">
+  <img src="assets/chat.jpg" alt="채팅" width="300" height="600">
+  <img src="assets/profile.jpg" alt="프로필" width="300" height="600">
 </div>
 
 
